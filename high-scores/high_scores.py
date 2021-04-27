@@ -8,6 +8,5 @@ def personal_best(scores):
 
 
 def personal_top_three(scores):
-    lis = sorted(scores)
-    top = lis[::-1]
-    return top[0:3]
+    lis = sorted(scores)[::-1]
+    return lis[0:3]
