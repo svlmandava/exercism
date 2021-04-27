@@ -1,6 +1,5 @@
 def latest(scores):
-    rev = scores[::-1]
-    return rev[0]
+    return scores[-1]
 
 
 def personal_best(scores):
