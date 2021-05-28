@@ -2,7 +2,8 @@ COLORS = {'black' : 0, 'brown' : 1, 'red' : 2, 'orange' : 3, 'yellow' : 4, 'gree
 
 
 def value(colors):
-    colorcode = ''
-    for x in colors[:2]:
-        colorcode += str(COLORS[x])
-    return int(colorcode)
+    return int(''.join(str(COLORS[x]) for x in colors[:2]))
+    #for x in colors[:2]:
+     #   colorcode += str(COLORS[x])
+    #return int(colorcode)
+    
