@@ -1,3 +1,6 @@
+from typing import List
+
+
 RNASEQ = {
     "AUG": "Methionine", 
     "UUU": "Phenylalanine", 
@@ -18,7 +21,7 @@ RNASEQ = {
     "UGA": "STOP"
     }
 
-def proteins(strand):
+def proteins(strand: str) -> List[str]:
     protein = []
     for x in range(0, len(strand), 3):
       value = RNASEQ[strand[x : x + 3]]
