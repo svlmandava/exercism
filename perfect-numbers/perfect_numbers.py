@@ -1,15 +1,15 @@
 def classify(number):
-        sum = 0
-        if number < 1 or type(number) != int:
-                raise ValueError(".+")
+        total = 0
+        if number < 1:
+                raise ValueError(".+An error occured due to the value given. Make sure the value should be greater than 0.")
         else:
                 for i in range (1,number):
                         if number % i == 0:
-                                sum += i
+                                total += i
 
-        if sum == number:
+        if total == number:
                 return 'perfect'
-        elif sum > number:
+        elif total > number:
                 return 'abundant'
         else:
                 return 'deficient'
